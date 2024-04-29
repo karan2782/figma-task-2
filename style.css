@@ -1,203 +1,274 @@
-header{
-    border: 2px solid black;
-    background-color: blue;
-    color: white;
+body{
+    background-color: #F5F7FD;
 }
-.logo>h3{
+header {
+  
+  background-color: #434CCC;
+  color: white;
+  margin: auto;
+}
+.logo > h3 {
+  font-family: DM Serif Display;
+  font-size: 40px;
+  line-height: 48px;
+  /* text-align: left; */
+}
+.icon > ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.icon > ul > li {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main {
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.signup {
+  font-family: DM Sans;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 13px 56px;
+  border: 1px solid white;
+  margin-left: 35px ;
+}
+
+.texts > h1 {
+  font-family: DM Serif Display;
+  font-size: 72px;
+  line-height: 80px;
+  text-align: center;
+}
+.texts > p {
+  font-family: DM Sans;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.map {
+  margin-top: 64px;
+}
+
+.img-map {
+  width: 1170px;
+  height: 640px;
+  margin: auto;
+  padding: 10px;
+}
+.img-map > img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.message > h2 {
+  font-family: DM Serif Display;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.message form input {
+  width: 401px;
+  height: 40px;
+  
+}
+
+form > input:last-child {
+  width: 834px;
+  height: 144px;
+}
+
+.info {
+  font-family: DM Serif Display;
+  font-size: 56px;
+  line-height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  row-gap: 25px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.second-section {
+  margin: auto;
+  margin-top: 44px;
+  margin-bottom: 50px;
+}
+.second-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  /* margin: auto; */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.para {
+  width: 200px;
+  height: 48px;
+  font-family: DM Sans;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.set-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.small-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-btn {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  padding: 13px 50px;
+  margin-top: 33px;
+  background-color: blue;
+  color: white;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+  row-gap: 20px;
+}
+
+.social-md {
+  text-align: center;
+}
+.footer-text > h5 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+}
+footer {
+  margin: auto;
+  padding: 0 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFDC79;
+}
+
+.footer-text > h2 {
+  width: 516px;
+  height: 128px;
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+.email-input > input {
+  width: 370px;
+  height: 38px;
+}
+.email-input > button {
+  padding: 11px 45px;
+  background-color: blue;
+  color: white;
+  width: 120px;
+}
+
+
+
+@media all and (max-width: 600px) {
+  .logo > h3 {
+    font-family: DM Serif Display;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .icon {
+    display: none;
+  }
+  .text > h1 {
+    font-family: DM Serif Display;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+  }
+  .text > p {
+    font-family: DM Sans;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .img-map {
+    width: 90%;
+  }
+
+  .message > h2 {
+    font-family: DM Serif Display;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .message form input {
+    width: 80%;
+    margin: 10px 0;
+  }
+  .second-box {
+    justify-content: flex-start;
+  }
+  .info > h2 {
+    font-family: DM Serif Display;
+    font-size: 40px;
+    line-height: 48px;
     
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:0 14px ;
+  }
+  .email-input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.footer-text>h2{
+
 font-family: DM Serif Display;
 font-size: 40px;
 line-height: 48px;
-/* text-align: left; */
-
-}
-.icon>ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-.icon>ul>li{
-   
-font-family: DM Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-
-}
-.icon{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.signup{
-    font-family: DM Sans;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-
-}
-
-.texts>h1{
-font-family: DM Serif Display;
-font-size: 72px;
-line-height: 80px;
-text-align: center;
-
-}
-.texts>p{
-    
-font-family: DM Sans;
-font-size: 20px;
-line-height: 32px;
-text-align: center;
-
-}
-
-.map{
-    margin-top: 64px;
-}
-
-.img-map{
-    width: 1170px;
-height: 640px;
-margin: auto;
-}
-.img-map>img{
-    width: 100%;
-    height: 100%;
-}
-
-.message>h2{
-
-font-family: DM Serif Display;
-font-size: 56px;
-line-height: 64px;
 text-align: left;
+width: 209px;
 
 }
-
-.message form input{
-    width: 401px;
-height: 40px;
-/* margin-left: 10px; */
-
-
-}
-
-form>input:last-child{
-    width: 834px;
-    height: 144px;
-}
-
-.info{
-   
-font-family: DM Serif Display;
-font-size: 56px;
-line-height: 64px;
-
-
-}
-
-.second-section{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    margin: auto;
-    align-items: center;
-}
-
-.para{
-width: 200px;
-height: 48px;
-font-family: DM Sans;
-font-size: 16px;
-line-height: 24px;
-
-
-}
-
-.set-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.small-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.submit-btn{
-    font-family: DM Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-text-align: center;
-padding: 13px 50px;
-margin-top:33px;
-background-color: blue;
-color: white;
-}
-.message{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.social-md{
-    text-align: center;
-}
-.footer-text>h5{
     
-font-family: DM Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.3em;
-
-
 }
-footer{
-margin: auto;
-padding: 0 66px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: lightsalmon;
-
-
-}
-
-.footer-text>h2{
-width: 516px;
-height: 128px;
-font-family: DM Serif Display;
-font-size: 56px;
-font-weight: 400;
-line-height: 64px;
-
-
-
-}
-
-.email-input>input{
-    width: 370px;
-    height: 38px;
-}
-.email-input>button{
-    padding: 11px 45px;
-    background-color: blue;
-    color: white;
-}
-
